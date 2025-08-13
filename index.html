@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashes into Beauty - 40 Day Transformation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef6f6;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .rose-bg {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23f43f5e" opacity="0.1" d="M50 20Q40 10 30 20Q20 30 30 40Q40 50 50 40Q60 50 70 40Q80 30 70 20Q60 10 50 20Z"/></svg>');
+            background-size: 200px;
+        }
+        
+        .day-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .scripture {
+            border-left: 4px solid #f43f5e;
+        }
+        
+        .progress-bar {
+            height: 6px;
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body class="rose-bg">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="flex justify-center mb-4">
+                <div class="bg-rose-100 p-3 rounded-full">
+                    <i class="fas fa-rose text-rose-600 text-3xl"></i>
+                </div>
+            </div>
+            <h1 class="title-font text-4xl md:text-5xl font-bold text-rose-800 mb-2">Guarded Rose 🌹 Presents</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-rose-700 mb-6">Ashes into Beauty</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 inline-block">
+                <h3 class="title-font text-2xl text-rose-900">40 Day Transformation Journey</h3>
+            </div>
+        </header>
+
+        <!-- Progress Tracker -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-12">
+            <h3 class="title-font text-xl text-rose-800 mb-4">Your Transformation Progress</h3>
+            <div class="mb-2 flex justify-between">
+                <span class="text-sm text-gray-600">Day 1 of 40</span>
+                <span class="text-sm text-gray-600">2.5% complete</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                <div class="progress-bar bg-rose-600 h-2.5 rounded-full" style="width: 2.5%"></div>
+            </div>
+            <div class="text-center">
+                <button class="bg-rose-600 hover:bg-rose-700 text-white font-medium py-2 px-6 rounded-full transition duration-300">
+                    Mark Today Complete
+                </button>
+            </div>
+        </div>
+
+        <!-- Days Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <!-- Day 1 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 1</h3>
+                </div>
+                <div class="p-5">
+                    <p class="text-gray-700 italic">"Behold, I will do something new"</p>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 2</h3>
+                </div>
+                <div class="p-5">
+                    <p class="text-gray-700">The First Commandment</p>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 3</h3>
+                </div>
+                <div class="p-5 scripture">
+                    <p class="text-gray-700">Romans 12:2</p>
+                    <p class="text-gray-600 mt-2 italic">"Don't copy the behavior and customs of this world, but let God transform you into a new person by changing the way you think."</p>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 4</h3>
+                </div>
+                <div class="p-5">
+                    <p class="text-gray-700">The Second Commandment</p>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 5</h3>
+                </div>
+                <div class="p-5 scripture">
+                    <p class="text-gray-700">Proverbs 23:7</p>
+                    <p class="text-gray-600 mt-2 italic">"You are as you think"  🤔</p>
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 6</h3>
+                </div>
+                <div class="p-5">
+                    <p class="text-gray-700">Commandment 3</p>
+                </div>
+            </div>
+
+            <!-- Day 7 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 7</h3>
+                </div>
+                <div class="p-5 scripture">
+                    <p class="text-gray-700">Hebrews 11:1</p>
+                    <p class="text-gray-600 mt-2 italic">"Now faith is the substance of things hoped for, the evidence of things not seen."</p>
+                </div>
+            </div>
+
+            <!-- Day 8 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 8</h3>
+                </div>
+                <div class="p-5">
+                    <p class="text-gray-700">Commandment 4</p>
+                </div>
+            </div>
+
+            <!-- Day 9 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 9</h3>
+                </div>
+                <div class="p-5 scripture">
+                    <p class="text-gray-700">Habakkuk 2:2</p>
+                    <p class="text-gray-600 mt-2 italic">"Write the vision and make it plain."</p>
+                </div>
+            </div>
+
+            <!-- Day 10 -->
+            <div class="day-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-rose-100 p-4">
+                    <h3 class="title-font text-lg text-rose-800">Day 10</h3>
+                </div>
+                <div class="p-5">
+                    <p class="text-gray-700">Commandment 5</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notes Section -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h3 class="title-font text-xl text-rose-800 mb-4 flex items-center">
+                <i class="fas fa-pencil-alt mr-2"></i> Transformation Notes
+            </h3>
+            <div class="mb-4 p-4 bg-rose-50 rounded-lg">
+                <p class="text-gray-700"><span class="font-semibold">Day 22 Note:</span> 1:50 PM - I have 3 weeks and I have more than half of it figured out. I need to write notes subjects that need to be talked about:</p>
+                <ul class="list-disc pl-5 mt-2 text-gray-600">
+                    <li>Comparison</li>
+                    <li>Envious</li>
+                    <li>Jealousy (huge one)</li>
+                </ul>
+            </div>
+            <textarea class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-300 focus:border-transparent" rows="4" placeholder="Write your transformation insights here..."></textarea>
+            <button class="mt-3 bg-rose-600 hover:bg-rose-700 text-white font-medium py-2 px-6 rounded-full transition duration-300">
+                Save Notes
+            </button>
+        </div>
+
+        <!-- Remaining Days Summary -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="title-font text-xl text-rose-800 mb-4">Upcoming Transformation Days</h3>
+            <div class="space-y-2">
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                    <div class="bg-rose-100 text-rose-800 rounded-full w-8 h-8 flex items-center justify-center mr-3">11</div>
+                    <p class="text-gray-700">Mark 11:24 - "Therefore whatever you ask in prayer  🙏 believe that you have received it and it will be yours."</p>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                    <div class="bg-rose-100 text-rose-800 rounded-full w-8 h-8 flex items-center justify-center mr-3">12</div>
+                    <p class="text-gray-700">Commandment 6</p>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                    <div class="bg-rose-100 text-rose-800 rounded-full w-8 h-8 flex items-center justify-center mr-3">13</div>
+                    <p class="text-gray-700">"You have not because you ask not."</p>
+                </div>
+                <!-- More days can be added here -->
+            </div>
+            <div class="mt-4 text-center">
+                <button class="text-rose-600 hover:text-rose-800 font-medium flex items-center justify-center mx-auto">
+                    View All 40 Days
+                    <i class="fas fa-chevron-down ml-2"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-600 text-sm">
+            <p>Guarded Rose 🌹 Transformation Journey</p>
+            <p class="mt-1">"Ashes into Beauty" - 40 Days to Renewal</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-rose-600 hover:text-rose-800"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-rose-600 hover:text-rose-800"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-rose-600 hover:text-rose-800"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple script to mark days as complete
+        document.addEventListener('DOMContentLoaded', function() {
+            const dayCards = document.querySelectorAll('.day-card');
+            const progressBar = document.querySelector('.progress-bar');
+            
+            dayCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('ring-2');
+                    this.classList.toggle('ring-rose-400');
+                    
+                    // Update progress (simplified for demo)
+                    const currentWidth = parseInt(progressBar.style.width) || 2.5;
+                    progressBar.style.width = (currentWidth + 2.5) + '%';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
